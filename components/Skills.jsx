@@ -6,7 +6,7 @@ import Image from "next/image";
 
 function Skills() {
   return (
-    <div className="ww-full lg:h-screen p-2">
+    <div id="skills" className="ww-full lg:h-screen p-2">
       <div className="max-v-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase text-[#73BA9B]">
           Skills
