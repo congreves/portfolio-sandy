@@ -15,12 +15,12 @@ function Projects() {
           <ProjectItem
             title="Svea Solar - Landing Page"
             backgroundImg={sveaSolarImg}
-            projectUrl="/property"
+            projectUrl="/sveasolar"
           />
           <ProjectItem
-            title="Wine Distrubution Site"
+            title="Viovin"
             backgroundImg={wineImg}
-            projectUrl="/property"
+            projectUrl="/viovin"
           />
         </div>
       </div>

@@ -4,10 +4,26 @@ import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { useRouter } from "next/router";
+import logo from "../public/assets/images/logo.png";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
+  const [position, setPosition] = useState("fixed");
+  const router = useRouter();
+
+  useEffect(() => {
+    if (router.asPath === "/sveasolar" || router.asPath === "/viovin") {
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3");
+    } else {
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
+    }
+  }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -26,7 +42,8 @@ function Navbar() {
 
   return (
     <div
-      clasname={
+      style={{ backgroundColor: `${navBg}` }}
+      className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100]"
           : "fixed w-full h-20 z-[100]"
@@ -36,7 +53,7 @@ function Navbar() {
         <Link href="/">
           <a>
             <Image
-              src="/../public/assets/logo.png"
+              src={logo}
               alt="/"
               width="100"
               height="100"
@@ -45,7 +62,7 @@ function Navbar() {
           </a>
         </Link>
         <div>
-          <ul className="hidden md:flex">
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <li className="ml-10 text-sm uppercase hover:border-b">
               <Link href="/">Home</Link>
             </li>
@@ -66,6 +83,9 @@ function Navbar() {
               <Link href="/#contact">Contact</Link>
             </li>
           </ul>
+
+          {/* HAMBURGER MENU */}
+
           <div onClick={handleNav} className="md:hidden">
             <AiOutlineMenu size={25} />
           </div>
@@ -86,12 +106,7 @@ function Navbar() {
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/">
-                <Image
-                  src="/../public/assets/logo.png"
-                  width="85"
-                  height="85"
-                  alt="/"
-                />
+                <Image src={logo} width="85" height="85" alt="/" />
               </Link>
               <div
                 onClick={handleNav}
@@ -108,49 +123,67 @@ function Navbar() {
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
-              <Link href="/">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Home
-                </li>
-              </Link>
-              <Link href="/#about">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  About
-                </li>
-              </Link>
-              <Link href="/#skills">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Skills
-                </li>
-              </Link>
-              <Link href="/#projects">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Projects
-                </li>
-              </Link>
-              <Link href="/#contact">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Contact
-                </li>
-              </Link>
+              <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <Link href="/"> Home</Link>
+              </li>
+              <li
+                onClick={() => setNav(false)}
+                className="py-4 text-sm uppercase hover:border-b"
+              >
+                <Link href="/#about"> About</Link>
+              </li>
+              <li
+                onClick={() => setNav(false)}
+                className="py-4 text-sm hover:border-b"
+              >
+                <Link href="/#skills">Skills </Link>
+              </li>
+              <li
+                onClick={() => setNav(false)}
+                className="py-4 text-sm hover:border-b"
+              >
+                <Link href="/#projects">Projects </Link>
+              </li>
+              <li
+                onClick={() => setNav(false)}
+                className="py-4 text-sm hover:border-b"
+              >
+                <Link href="/#contact">Contact </Link>
+              </li>
             </ul>
             <div className="pt-40">
               <p className="uppercase tracking-widest text-[#B2675E]">
                 Lets connect
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaLinkedinIn />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsFillPersonLinesFill />
-                </div>
+                <a
+                  href="www.linkedin.com/in/sandycongreve"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <FaLinkedinIn />
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/congreves"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <FaGithub />
+                  </div>
+                </a>
+                <a href="/" target="_blank" rel="noreferrer">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <AiOutlineMail />
+                  </div>
+                </a>
+                <a href="/" target="_blank" rel="noreferrer">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <BsFillPersonLinesFill />
+                  </div>
+                </a>
               </div>
             </div>
           </div>

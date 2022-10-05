@@ -49,6 +49,7 @@ function Contact() {
               </div>
             </div>
           </div>
+          
           {/* RIGHT*/}
 
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
