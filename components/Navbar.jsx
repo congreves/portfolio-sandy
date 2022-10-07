@@ -67,7 +67,7 @@ function Navbar() {
               <Link href="/">Home</Link>
             </li>
 
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li className="ml-10 text-sm uppercase hover:border-b smooth-scroll">
               <Link href="/#about">About</Link>
             </li>
 
