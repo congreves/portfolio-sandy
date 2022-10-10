@@ -3,6 +3,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
+
 function Main() {
   return (
     <div id="home" className="w-full h-screen text-center">
@@ -22,16 +23,16 @@ function Main() {
             consistency in development.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
+            <div className="rounded-full shadow-xl shadow-gray-400  dark:shadow-black p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
               <FaLinkedinIn />
             </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
+            <div className="rounded-full shadow-xl shadow-gray-400   dark:shadow-black p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
               <FaGithub />
             </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
+            <div className="rounded-full shadow-xl shadow-gray-400   dark:shadow-black p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
               <AiOutlineMail />
             </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
+            <div className="rounded-full shadow-xl shadow-gray-400   dark:shadow-black  p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
               <BsFillPersonLinesFill />
             </div>
           </div>

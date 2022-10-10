@@ -3,6 +3,7 @@ import React from "react";
 import sveaSolarImg from "../public/assets/projects/sveasolar.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
+import {HiArrowLeft} from "react-icons/hi"
 
 function sveasolar() {
   return (
@@ -37,7 +38,7 @@ function sveasolar() {
           <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           <button className="px-8 py-2 mt-4">Code</button>
         </div>
-        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
+        <div className="col-span-4 md:col-span-1 dark:shadow-black shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-1 md:grid-cols-1">
@@ -56,9 +57,14 @@ function sveasolar() {
             </div>
           </div>
         </div>
-        <Link href='/#projects'>
-          <p className="underline cursor-pointer">Back</p>
-        </Link>
+        <div className="flex justify-center py-12">
+          <Link href='/#projects'>
+            <div className="rounded-full  dark:shadow-black shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
+              <HiArrowLeft className="text-[#73BA9B]" sixe={30}  />
+
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   );

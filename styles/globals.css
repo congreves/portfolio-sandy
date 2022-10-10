@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+  #root {
+    @apply dark:bg-[rgb(25,26,30)];
+  }
   body {
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
+    @apply bg-[#ecf0f3] dark:bg-[#121212] text-[#1f2937] tracking-wide;
   }
   h1,
   h2,
@@ -12,18 +15,30 @@
   h4,
   h5,
   h6 {
-    @apply font-bold;
+    @apply font-bold dark:text-[#cacaca];
   }
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl;
+    @apply text-4xl sm:text-5xl md:text-6xl dark:text-[#cacaca];
   }
   h2 {
-    @apply text-3xl sm:text-4xl;
+    @apply text-3xl sm:text-4xl dark:text-[#cacaca];
+  }
+  p {
+    @apply dark:text-[#a3aba8];
   }
   li {
     @apply cursor-pointer;
   }
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
+    @apply shadow-xl shadow-gray-400  dark:shadow-black  rounded-xl uppercase bg-gradient-to-r from-[#81b4a0] to-[#1f3f39] text-white dark:bg-[#1a1c1b] dark:text-[#73BA9B];
+  }
+  label {
+    @apply dark:text-[#8b8b8b];
+  }
+  input {
+    @apply focus:ring-2 focus:ring-blue-500 focus:outline-none appearance-none w-full text-sm leading-6 text-slate-900 placeholder-slate-400 rounded-md py-2 pl-10 ring-1 ring-slate-200 shadow-sm;
+  }
+  textarea {
+    @apply focus:ring-2 focus:ring-blue-500 focus:outline-none appearance-none w-full text-sm leading-6 text-slate-900 placeholder-slate-400 rounded-md py-2 pl-10 ring-1 ring-slate-200 shadow-sm;
   }
 }

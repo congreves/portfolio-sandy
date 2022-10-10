@@ -21,7 +21,8 @@ function Skills(props) {
         </p>
         <h2 className=" py-4">What I Can Do</h2>
         <div className="grid md:grid.grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+
+          <div className="p-6   dark:shadow-black shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={htmlImg} width="64px" height="64px" alt="/" />
@@ -31,7 +32,8 @@ function Skills(props) {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+
+          <div className="p-6   dark:shadow-black shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={cssImg} width="64px" height="64px" alt="/" />
@@ -41,7 +43,8 @@ function Skills(props) {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+
+          <div className="p-6   dark:shadow-black shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={jsImg} width="64px" height="64px" alt="/" />
@@ -51,7 +54,8 @@ function Skills(props) {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+
+          <div className="p-6  dark:shadow-black shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={reactImg} width="64px" height="64px" alt="/" />
@@ -61,7 +65,8 @@ function Skills(props) {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+
+          <div className="p-6  dark:shadow-black shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={nextJsImg} width="64px" height="64px" alt="/" />
@@ -71,7 +76,8 @@ function Skills(props) {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+
+          <div className="p-6  dark:shadow-black shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={gitImg} width="64px" height="64px" alt="/" />
@@ -81,7 +87,8 @@ function Skills(props) {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+
+          <div className="p-6   dark:shadow-black shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={styledImg} width="64px" height="64px" alt="/" />
@@ -91,7 +98,8 @@ function Skills(props) {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+
+          <div className="p-6  dark:shadow-black shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={figmaImg} width="64px" height="64px" alt="/" />
@@ -101,6 +109,7 @@ function Skills(props) {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>

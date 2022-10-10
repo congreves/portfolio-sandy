@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Link from "next/link";
+import contactImg from "../public/assets/images/logo.png"
 
 function Contact() {
   return (
@@ -14,35 +15,35 @@ function Contact() {
         <h2 className="py-4">Get In Touch</h2>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* LEFT */}
-          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+          <div className="col-span-3 lg:col-span-2 w-full h-full  dark:shadow-black shadow-xl shadow-gray-400  rounded-xl p-4">
             <div className="lg:p-4 h-full">
               <div>
                 <Image
-                  className="rounded-xl hover:scale-105 ease-in duration-300"
-                  src="/../public/assets/contactphoto.png"
+                  className="rounded-xl hover:scale-105 ease-in duration-300 pt-1"
+                  src={contactImg}
                   alt="/"
                   width="350"
                   height="350"
                 />
               </div>
               <div>
-                <h2 className="py-2">Name here</h2>
+                <h3 className="py-2">Sandy Congreve</h3>
                 <p>Front-End Developer</p>
                 <p className="py-4">Im available for internship spring 2023</p>
               </div>
               <div>
                 <p className="uppercase pt-8">Connect With Me</p>
                 <div className="flex items justify-between py-4">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
+                  <div className="rounded-full  dark:shadow-black shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
                     <FaLinkedinIn />
                   </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
+                  <div className="rounded-full   dark:shadow-black shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
                     <FaGithub />
                   </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
+                  <div className="rounded-full  dark:shadow-black shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
                     <AiOutlineMail />
                   </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
+                  <div className="rounded-full  dark:shadow-black shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
                     <BsFillPersonLinesFill />
                   </div>
                 </div>
@@ -52,7 +53,7 @@ function Contact() {
           
           {/* RIGHT*/}
 
-          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+          <div className="col-span-3 w-full h-auto  dark:shadow-black shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
               <form>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
@@ -105,7 +106,7 @@ function Contact() {
         </div>
         <div className="flex justify-center py-12">
           <Link href="/">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
+            <div className="rounded-full  dark:shadow-black shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
               <HiOutlineChevronDoubleUp className="text-[#73BA9B]" sixe={30} />
             </div>
           </Link>

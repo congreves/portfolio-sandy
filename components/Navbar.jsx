@@ -5,23 +5,27 @@ import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
-import logo from "../public/assets/images/logo.png";
+import logo from "../public/assets/images/logoWhite.png";
+import { useTheme } from "next-themes";
+import { MoonIcon, SunIcon } from "@heroicons/react/outline";
 
 function Navbar() {
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
   const [linkColor, setLinkColor] = useState("#1f2937");
-  const [position, setPosition] = useState("fixed");
   const router = useRouter();
+
 
   useEffect(() => {
     if (router.asPath === "/sveasolar" || router.asPath === "/viovin") {
       setNavBg("transparent");
-      setLinkColor("#ecf0f3");
+      setLinkColor("#73BA9B");
     } else {
       setNavBg("#ecf0f3");
-      setLinkColor("#1f2937");
+      setLinkColor("#73BA9B");
     }
   }, [router]);
 
@@ -40,30 +44,33 @@ function Navbar() {
     window.addEventListener("scroll", handleShadow);
   }, []);
 
+  useEffect(() => setMounted(true), []);
+  if (!mounted) return null;
+
   return (
     <div
-      style={{ backgroundColor: `${navBg}` }}
+      style={{ backgroundColor: `#121212` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100]"
+          ? "fixed w-full h-20 shadow-xl z-[100] dark:shadow-black ]"
           : "fixed w-full h-20 z-[100]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16  ">
         <Link href="/">
           <a>
             <Image
               src={logo}
               alt="/"
-              width="100"
-              height="100"
+              width="150"
+              height="75"
               className="cursor-pointer"
             />
           </a>
         </Link>
         <div>
-          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
-            <li className="ml-10 text-sm uppercase hover:border-b">
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex items-center">
+            <li className="ml-10 text-sm uppercase hover:border-b" >
               <Link href="/">Home</Link>
             </li>
 
@@ -81,6 +88,18 @@ function Navbar() {
 
             <li className="ml-10 text-sm uppercase hover:border-b">
               <Link href="/#contact">Contact</Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <button
+                onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+                className="rounded-full p-2 bg-black dark:bg-white text-white dark:text-black"
+              >
+                {theme === "light" ? (
+                  <MoonIcon className="text-[#0d0e0e] w-5 h-5" />
+                ) : (
+                  <SunIcon className="text-[#0d0e0e] w-5 h-5" />
+                )}{" "}
+              </button>
             </li>
           </ul>
 
@@ -194,3 +213,4 @@ function Navbar() {
 }
 
 export default Navbar;
+/* {Toggle to {theme === "light" ? "Dark" : "Light"}*/
