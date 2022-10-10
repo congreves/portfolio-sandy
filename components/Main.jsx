@@ -3,7 +3,6 @@ import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
-
 function Main() {
   return (
     <div id="home" className="w-full h-screen text-center">
@@ -24,16 +23,25 @@ function Main() {
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-xl shadow-gray-400  dark:shadow-black p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
-              <FaLinkedinIn />
+              <a href="www.linkedin.com/in/sandycongreve">
+                <FaLinkedinIn />
+              </a>
             </div>
             <div className="rounded-full shadow-xl shadow-gray-400   dark:shadow-black p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
-              <FaGithub />
+              <a href="https://github.com/congreves">
+                <FaGithub />
+              </a>
             </div>
             <div className="rounded-full shadow-xl shadow-gray-400   dark:shadow-black p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
-              <AiOutlineMail />
+              <a href="https://www.sandycongreve.com/">
+                {" "}
+                <AiOutlineMail />{" "}
+              </a>
             </div>
             <div className="rounded-full shadow-xl shadow-gray-400   dark:shadow-black  p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
-              <BsFillPersonLinesFill />
+              <a href="https://www.sandycongreve.com/">
+                <BsFillPersonLinesFill />
+              </a>
             </div>
           </div>
         </div>
