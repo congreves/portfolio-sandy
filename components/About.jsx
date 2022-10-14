@@ -4,7 +4,7 @@ import profileImg from "../public/assets/profileme.jpg";
 
 function About() {
   return (
-    <div  id="about" className="w-full md:h-screen p-2 flex items-center py-16">
+    <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-[#73BA9B]">
@@ -13,18 +13,14 @@ function About() {
           <h2 className="py-4">Who I Am</h2>
           <p className="py-2 text-gray-600">Im a creative developer</p>
           <p className="py-2 text-gray-600">
-            I’m a highly passionated human being that has a big interest in
-            people, culture and the magic that happens when we create group
-            synergy.
+            ...that has a big interest in people, culture and the magic that
+            happens when we create group synergy.
           </p>
           <p className="py-2 text-gray-600">
-            I like to engage with people and brands to understand their needs
-            and aspirations, to better design products and services that make
-            sense whether they are digital, physical or both. I believe design
-            shapes the life we live so it’s important to be mindful of what I
-            put out there. Therefore I’d like to discover the hidden privileges
-            in design, in order to create better experiences for all-humans and
-            not just a part.
+            Former Experience Designer & learning Frontend Developer currently
+            studying at Change Makers Educations in Stockholm. I&#39;m a react
+            and CSS nerd. I can&#39;t shut up about utility-first driven CSS and
+            consistency in development.
           </p>
           <p className="py-2 text-gray-600 underline cursor-pointer">
             Check out some of my latest projects.

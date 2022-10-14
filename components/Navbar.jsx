@@ -49,7 +49,7 @@ function Navbar() {
 
   return (
     <div
-      style={{ backgroundColor: `#121212` }}
+      style={{ backgroundColor: navBg }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100] dark:shadow-black ]"
@@ -92,12 +92,12 @@ function Navbar() {
             <li className="ml-10 text-sm uppercase hover:border-b">
               <button
                 onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-                className="rounded-full p-2 bg-black dark:bg-white text-white dark:text-black"
+                className="rounded-full p-2 bg-[#73BA9B] animate-pulse"
               >
                 {theme === "light" ? (
-                  <MoonIcon className="text-[#0d0e0e] w-5 h-5" />
+                  <MoonIcon className="text-white w-5 h-5" />
                 ) : (
-                  <SunIcon className="text-[#0d0e0e] w-5 h-5" />
+                  <SunIcon className="text-white w-5 h-5" />
                 )}{" "}
               </button>
             </li>

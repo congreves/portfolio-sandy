@@ -7,7 +7,11 @@ export default function Document() {
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap"
           rel="stylesheet"
-        ></link>
+        >
+  
+        </link>
+        
+        
       </Head>
       <body>
         <Main />

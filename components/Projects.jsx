@@ -11,7 +11,7 @@ function Projects() {
           Projects
         </p>
         <h2 className="py-4">What I’ve Built</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-16">
           <ProjectItem
             title="Svea Solar - Landing Page"
             backgroundImg={sveaSolarImg}

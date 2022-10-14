@@ -2,7 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
 @layer base {
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('/web/fonts/Satoshi-Medium.woff2') format('woff2');
+    font-weight: medium;
+    font-display: swap;
+    font-style: normal;
+  }
   #root {
     @apply dark:bg-[rgb(25,26,30)];
   }
@@ -24,13 +39,13 @@
     @apply text-3xl sm:text-4xl dark:text-[#cacaca];
   }
   p {
-    @apply dark:text-[#a3aba8];
+    @apply dark:text-[#a3aba8] text-left tracking-wide leading-relaxed text-xl;
   }
   li {
     @apply cursor-pointer;
   }
   button {
-    @apply shadow-xl shadow-gray-400  dark:shadow-black  rounded-xl uppercase bg-gradient-to-r from-[#81b4a0] to-[#1f3f39] text-white dark:bg-[#1a1c1b] dark:text-[#73BA9B];
+    @apply shadow-xl shadow-gray-400  dark:shadow-black  rounded-full uppercase  py-2.5 px-6 bg-[#73BA9B] text-white dark:bg-[#73BA9B] dark:text-[#73BA9B];
   }
   label {
     @apply dark:text-[#8b8b8b];
