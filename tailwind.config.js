@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        satoshi: "Satoshi, black"
+        satoshi: "Satoshi, black",
       },
       animation: {
-        blob: "blob 7s infinite",
+        blob: "blob 10s infinite",
       },
       keyframes: {
         blob: {
@@ -34,8 +34,8 @@ module.exports = {
         blur: "blur(20px)",
       },
     },
-    variants:{
-      extend:{},
+    variants: {
+      extend: {},
     },
   },
   plugins: [require("tailwindcss-filters")],
