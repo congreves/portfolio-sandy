@@ -18,13 +18,15 @@ function Navbar() {
   const [linkColor, setLinkColor] = useState("#1f2937");
   const router = useRouter();
 
-
   useEffect(() => {
     if (router.asPath === "/sveasolar" || router.asPath === "/viovin") {
       setNavBg("transparent");
+      setLinkColor("#e9f0ed");
+    } else if (theme === "light") {
+      setNavBg("#ecf0f3");
       setLinkColor("#73BA9B");
     } else {
-      setNavBg("#ecf0f3");
+      setNavBg("#121212");
       setLinkColor("#73BA9B");
     }
   }, [router]);
@@ -49,11 +51,10 @@ function Navbar() {
 
   return (
     <div
-      style={{ backgroundColor: navBg }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100] dark:shadow-black ]"
-          : "fixed w-full h-20 z-[100]"
+          ? "fixed w-full h-20 shadow-xl z-[100] dark:shadow-black "
+          : "fixed w-full h-20 z-[100]  "
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16  ">
@@ -69,8 +70,11 @@ function Navbar() {
           </a>
         </Link>
         <div>
-          <ul style={{ color: `${linkColor}` }} className="hidden md:flex items-center">
-            <li className="ml-10 text-sm uppercase hover:border-b" >
+          <ul
+            style={{ color: `${linkColor}` }}
+            className="hidden md:flex items-center"
+          >
+            <li className="ml-10 text-sm uppercase hover:border-b">
               <Link href="/">Home</Link>
             </li>
 
@@ -119,7 +123,7 @@ function Navbar() {
           className={
             nav
               ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-              : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+              : "fixed left-[-120%] top-0 p-10 ease-in duration-500"
           }
         >
           <div>
@@ -213,4 +217,4 @@ function Navbar() {
 }
 
 export default Navbar;
-/* {Toggle to {theme === "light" ? "Dark" : "Light"}*/
+/* {Toggle to {theme === "light" ? "Dark" : "Light"}   style={{ backgroundColor: navBg }}*/

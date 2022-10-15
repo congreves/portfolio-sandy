@@ -5,14 +5,16 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Link from "next/link";
-import contactImg from "../public/assets/images/logo.png"
+import contactImg from "../public/assets/images/logo.png";
 
 function Contact() {
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <p>Contact</p>
-        <h2 className="py-4">Get In Touch</h2>
+        <p className=" py-4 max-w-[70%] uppercase text-md tracking-widest text-gray-600">
+          <span className="text-[#73BA9B]">⎯⎯⎯⎯⎯</span> CONTACT
+        </p>
+        <h2 className="py-4">How To Get In Touch</h2>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* LEFT */}
           <div className="col-span-3 lg:col-span-2 w-full h-full  dark:shadow-black shadow-xl shadow-gray-400  rounded-xl p-4">
@@ -27,12 +29,12 @@ function Contact() {
                 />
               </div>
               <div>
-                <h3 className="py-2">Sandy Congreve</h3>
+                <p className="py-2">Sandy Congreve</p>
                 <p>Front-End Developer</p>
                 <p className="py-4">Im available for internship spring 2023</p>
               </div>
               <div>
-                <p className="uppercase pt-8">Connect With Me</p>
+                <button>Send me an email</button>
                 <div className="flex items justify-between py-4">
                   <div className="rounded-full  dark:shadow-black shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
                     <FaLinkedinIn />
@@ -50,8 +52,17 @@ function Contact() {
               </div>
             </div>
           </div>
-          
-     
+          <div className="col-span-3 w-full h-auto  dark:shadow-black shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+            <iframe
+              src="https://www.slideshare.net/slideshow/embed_code/key/2G0w5L1Qf1NxxK?hostedIn=slideshare&page=upload"
+              width="100%"
+              height="100%"
+              frameborder="0"
+              marginwidth="0"
+              marginheight="0"
+              scrolling="no"
+            ></iframe>
+          </div>
         </div>
         <div className="flex justify-center py-12">
           <Link href="/">
@@ -67,11 +78,11 @@ function Contact() {
 
 export default Contact;
 
+{
+  /* RIGHT*/
+}
 
-
-     {/* RIGHT*/}
-
-    /* <div className="col-span-3 w-full h-auto  dark:shadow-black shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+/* <div className="col-span-3 w-full h-auto  dark:shadow-black shadow-xl shadow-gray-400 rounded-xl lg:p-4">
      <div className="p-4">
        <form>
          <div className="grid md:grid-cols-2 gap-4 w-full py-2">

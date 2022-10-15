@@ -7,8 +7,8 @@ function Projects() {
   return (
     <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="text-xl tracking wodest uppercase text-[#73BA9B]">
-          Projects
+        <p className=" py-4 max-w-[70%] uppercase text-md tracking-widest text-gray-600">
+          <span className="text-[#73BA9B]">⎯⎯⎯⎯⎯</span> PROJECTS
         </p>
         <h2 className="py-4">What I’ve Built</h2>
         <div className="grid md:grid-cols-2 gap-16">

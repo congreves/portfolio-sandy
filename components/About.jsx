@@ -6,10 +6,10 @@ function About() {
   return (
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
-        <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-[#73BA9B]">
-            About
-          </p>
+        <div className="col-span-2 p-4">
+        <p className=" py-4 max-w-[70%] uppercase text-md tracking-widest text-gray-600">
+              <span className="text-[#73BA9B]">⎯⎯⎯⎯⎯</span>  ABOUT
+            </p>
           <h2 className="py-4">Who I Am</h2>
           <p className="py-2 text-gray-600">Im a creative developer</p>
           <p className="py-2 text-gray-600">
