@@ -12,8 +12,8 @@ function Footer() {
       <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div class="grid grid-cols-2 gap-x-5 gap-y-12 md:grid-cols-4 md:gap-x-12">
           <div>
-            <ul class="mt-8 space-y-4">
-              <li className="hover:text-[#73BA9B]">
+            <ul class="mt-8 space-y-4 dark:text-[#ecf0f3]">
+              <li className=" hover:text-[#73BA9B]">
                 <Link href="/">Home</Link>
               </li>
               <li className="hover:text-[#73BA9B]">
@@ -29,7 +29,7 @@ function Footer() {
           </div>
         </div>
 
-        <hr class="mt-16 mb-10 border-gray-800" />
+        <hr class="mt-16 mb-10 border-[#73BA9B]" />
 
         <div class="flex flex-wrap items-center justify-between">
           <Image class="h-8 auto md:order-1" src={logoImg} alt="" />
@@ -69,7 +69,7 @@ function Footer() {
             </li>
           </ul>
 
-          <p class="w-full mt-8 text-sm text-center text-gray-100 md:mt-0 md:w-auto md:order-2">
+          <p class="w-full mt-8 text-sm text-center text-[#73BA9B] md:mt-0 md:w-auto md:order-2">
             © Copyright 2022, All Rights Reserved by Sandy Congreve
           </p>
         </div>

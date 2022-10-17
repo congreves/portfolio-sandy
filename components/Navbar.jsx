@@ -74,26 +74,26 @@ function Navbar() {
             style={{ color: `${linkColor}` }}
             className="hidden md:flex items-center"
           >
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li className="ml-10  uppercase hover:border-b">
               <Link href="/">Home</Link>
             </li>
 
-            <li className="ml-10 text-sm uppercase hover:border-b smooth-scroll">
+            <li className="ml-10  uppercase hover:border-b smooth-scroll">
               <Link href="/#about">About</Link>
             </li>
 
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li className="ml-10  uppercase hover:border-b">
               <Link href="/#skills"> Skills</Link>
             </li>
 
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li className="ml-10 uppercase hover:border-b">
               <Link href="/#projects">Projects </Link>
             </li>
 
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li className="ml-10 uppercase hover:border-b">
               <Link href="/#contact">Contact</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li className="ml-10 uppercase hover:border-b">
               <button
                 onClick={() => setTheme(theme === "light" ? "dark" : "light")}
                 className="rounded-full p-2 bg-[#73BA9B] animate-pulse"
