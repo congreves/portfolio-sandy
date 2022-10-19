@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
-    "@lottiefiles/lottie-player": "^1.5.7",
     "next": "12.3.0",
     "next-themes": "^0.2.1",
     "react": "18.2.0",

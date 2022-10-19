@@ -12,18 +12,34 @@ function About() {
             <span className="text-[#73BA9B]">⎯⎯⎯⎯⎯</span> ABOUT
           </p>
           <h2 className="py-4">Who I Am</h2>
+
           <p className="py-4 text-gray-600">
-            Hi,I'm Sandy Congreve 28 years old from Uppsala, Sweden. Former
-            Experience Designer & learning Frontend Developer currently studying
-            at ChangeMakers Educations in Stockholm. I&#39;m a react and CSS
-            nerd. I can&#39;t shut up about utility-first driven CSS and
-            consistency in development.
+            Hi,I'm Sandy Congreve 28 years old from Uppsala, Sweden. A globally
+            comfortable human that has experience in agile teamwork, who begun
+            with UX/UI and ended up diving into Frontend to connect the dots of
+            a good user experience.. I&#39;m a react and CSS nerd. I can&#39;t
+            shut up about utility-first driven CSS and consistency in
+            development.
           </p>
           <h3>Background</h3>
-          <p className=" text-gray-600 py-4">--</p>
+          <p className="py-4">
+            I started my journey in tech by studying at Hyper Island. There I
+            gained experience working directly with clients solving cases mostly
+            revolving mostly revolving UX, branding and strategy. Since I have a
+            passion for people and design I choose to develop my role in UX/UI.
+            During my studies I started working as a UI designer at Svea Solar
+            designing mock-ups for the site and then did my intenship as a UX
+            designer.
+          </p>
+
           <h3>Goal</h3>
 
-          <p className="py-4">..is that I'd like to learn as much I can</p>
+          <p className="py-4">
+            My goals with my internship would be able to grow and experimenting
+            with cutting-edge CSS and JS. I’d like to develop my skills working
+            methodically in projects with in a team and more experienced
+            developers.{" "}
+          </p>
           <Link href="/#projects">
             <button className="py-2 cursor-pointer">
               Check out some of my latest projects.
