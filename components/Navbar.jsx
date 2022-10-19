@@ -109,7 +109,7 @@ function Navbar() {
 
           {/* HAMBURGER MENU */}
 
-          <div onClick={handleNav} className="md:hidden">
+          <div onClick={handleNav} className="md:hidden text-[#73BA9B]">
             <AiOutlineMenu size={25} />
           </div>
         </div>
@@ -122,18 +122,18 @@ function Navbar() {
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] dark:bg-[#121212] p-10 ease-in duration-500"
               : "fixed left-[-120%] top-0 p-10 ease-in duration-500"
           }
         >
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/">
-                <Image src={logo} width="85" height="85" alt="/" />
+                <Image src={logo} width="85" height="45" alt="/" />
               </Link>
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+                className="rounded-full shadow-lg text-[#73BA9B]  dark:shadow-black shadow-gray-400 p-3 cursor-pointer"
               >
                 <AiOutlineClose />
               </div>
@@ -146,36 +146,39 @@ function Navbar() {
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
-              <li onClick={() => setNav(false)} className="py-4 text-sm">
+              <li
+                onClick={() => setNav(false)}
+                className="py-4 text-sm text-[#73BA9B]"
+              >
                 <Link href="/"> Home</Link>
               </li>
               <li
                 onClick={() => setNav(false)}
-                className="py-4 text-sm uppercase hover:border-b"
+                className="py-4 text-sm uppercase hover:border-b text-[#73BA9B]"
               >
                 <Link href="/#about"> About</Link>
               </li>
               <li
                 onClick={() => setNav(false)}
-                className="py-4 text-sm hover:border-b"
+                className="py-4 text-sm hover:border-b text-[#73BA9B]"
               >
                 <Link href="/#skills">Skills </Link>
               </li>
               <li
                 onClick={() => setNav(false)}
-                className="py-4 text-sm hover:border-b"
+                className="py-4 text-sm hover:border-b text-[#73BA9B]"
               >
                 <Link href="/#projects">Projects </Link>
               </li>
               <li
                 onClick={() => setNav(false)}
-                className="py-4 text-sm hover:border-b"
+                className="py-4 text-sm hover:border-b text-[#73BA9B]"
               >
                 <Link href="/#contact">Contact </Link>
               </li>
             </ul>
             <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#B2675E]">
+              <p className="uppercase tracking-widest text-[#73BA9B]">
                 Lets connect
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w[80%]">
@@ -184,7 +187,7 @@ function Navbar() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-gray-400  text-[#73BA9B] dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaLinkedinIn />
                   </div>
                 </a>
@@ -193,17 +196,17 @@ function Navbar() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-gray-400 text-[#73BA9B] dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaGithub />
                   </div>
                 </a>
                 <a href="/" target="_blank" rel="noreferrer">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-gray-400 text-[#73BA9B] dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <AiOutlineMail />
                   </div>
                 </a>
                 <a href="/" target="_blank" rel="noreferrer">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-gray-400 text-[#73BA9B] dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <BsFillPersonLinesFill />
                   </div>
                 </a>

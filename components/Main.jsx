@@ -21,7 +21,7 @@ function Main() {
             </h1>
             <p className="  py-4 text-gray-600 ">
               Curious & engaged frontend-developer student that's <br></br>
-              looking for a workplace to learn, contribute & develop.
+              looking for a workplace to learn, contribute & develop!
             </p>
             <div className=" flex-wrap">
               <section className="flex items-center justify-between max-w-[330px] gap-8 pt-6">

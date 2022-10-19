@@ -20,13 +20,16 @@ function Contact() {
           <div className="col-span-3 lg:col-span-2 w-full h-full  dark:shadow-black shadow-xl shadow-gray-400  rounded-xl p-4">
             <div className="lg:p-4 h-full">
               <div>
-                <Image
-                  className="rounded-xl hover:scale-105 ease-in duration-300 pt-1"
-                  src={contactImg}
-                  alt="/"
-                  width="350"
-                  height="350"
-                />
+                <div className="flex justify-center">
+                  <iframe
+                    src="https://giphy.com/embed/gfl7CKcgs6exW"
+                    width="280"
+                    height="220"
+                    frameBorder="0"
+                    class="giphy-embed"
+                    allowFullScreen
+                  ></iframe>
+                </div>
               </div>
               <div>
                 <p className="py-2">Sandy Congreve</p>
