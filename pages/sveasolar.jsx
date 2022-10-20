@@ -33,7 +33,7 @@ function sveasolar() {
             <br></br>- Did lo-fi wireframing and hi-fi prototyping in Figma and
             delivered mock-ups.
             <br></br>- Iterative process working closely with stakholders,
-            designers & frontend engineers.
+            designers and frontend engineers.
             <br></br>- Created short banner video in premier pro which was
             included in the site.
             <br></br>- Contributed and worked on a developing design system in

@@ -29,7 +29,7 @@ function Navbar() {
       setNavBg("#121212");
       setLinkColor("#73BA9B");
     }
-  }, [router]);
+  }, [router, theme]);
 
   const handleNav = () => {
     setNav(!nav);
