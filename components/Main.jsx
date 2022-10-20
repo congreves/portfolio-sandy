@@ -56,7 +56,7 @@ function Main() {
           </div>
           <div className="lg:col-span-2 sm:col-span-1 p-4 hover:scale-105 ease-in duration-300 ">
             <Image
-              className="rounded-xl w-full h-auto m-auto  dark:shadow-black shadow-xl shadow-gray-400 rounded-xl "
+              className="rounded-xl w-full h-auto m-auto  dark:shadow-black shadow-xl shadow-gray-400"
               src={profileImg}
               alt="/"
               width="500%"
