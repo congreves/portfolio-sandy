@@ -11,7 +11,8 @@ export default function Home() {
     <div>
       <Head>
         <title>Sandy Congreve | Front-End Developer</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="./favicon.ico" />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <Main />
       <About />
