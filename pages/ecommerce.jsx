@@ -1,11 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import sveaSolarImg from "../public/assets/projects/sveasolar.jpg";
+import ecomImg from "../public/assets/projects/ecommerce.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import { HiArrowLeft } from "react-icons/hi";
+import { GoLinkExternal } from "react-icons/go";
 
-function sveasolar() {
+function ecommerce() {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -14,12 +15,12 @@ function sveasolar() {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={sveaSolarImg}
+          src={ecomImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Svea Solar - Re-Design Landing Page</h2>
-          <h3>Figma / Design Systems / Adobe Premiere Pro</h3>
+          <h2 className="py-2">Ecommerce / School Project</h2>
+          <h3>React / Recoil / Node / StyledComponents</h3>
         </div>
       </div>
 
@@ -29,20 +30,23 @@ function sveasolar() {
           <p className="pb-2">Project</p>
           <h2 className="pb-4">Overview</h2>
           <p className="pb-4">
-            - Redesigned the solar park page for Svea Solar.
-            <br></br>- Did lo-fi wireframing and hi-fi prototyping in Figma and
-            delivered mock-ups.
-            <br></br>- Iterative process working closely with stakholders,
-            designers & frontend engineers.
-            <br></br>- Created short banner video in premier pro which was
-            included in the site.
-            <br></br>- Contributed and worked on a developing design system in
-            Figma throughout my time at the company.
+            - Fetching products from backend server using axios.
+            <br></br>- Register authentication that get saved
+            to a database
+            <br></br>- Admin profile page with functionality to delete and
+            adjust data.
+            <br></br>- Updated chart and availability on products when choosing
+            product.
           </p>
           <div className="flex ">
-            <a href="https://sveasolar.com/solar-park/">
+            <a href="https://ecommerce-sonrisa.netlify.app/">
               <button className="px-8 py-2 cursor-pointer hover:scale-110 ease-in duration-300 m-4">
                 Demo
+              </button>
+            </a>
+            <a href="https://github.com/congreves/E-commerce">
+              <button className=" flex align-center justify-center px-8 py-2 mt-4 mr-8 cursor-pointer hover:scale-110 ease-in duration-300">
+                Code <GoLinkExternal />
               </button>
             </a>
           </div>
@@ -52,13 +56,19 @@ function sveasolar() {
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-1 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Figma
+                <RiRadioButtonFill className="pr-1" /> react
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Design Systems
+                <RiRadioButtonFill className="pr-1" /> recoil
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Adobe Premiere Pro
+                <RiRadioButtonFill className="pr-1" /> node.js
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> axios
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> styledComponents
               </p>
             </div>
           </div>
@@ -75,4 +85,4 @@ function sveasolar() {
   );
 }
 
-export default sveasolar;
+export default ecommerce;

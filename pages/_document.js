@@ -8,6 +8,8 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap"
           rel="stylesheet"
         ></link>
+        <link rel="icon" href="../public/assets/images/tab.png"></link>
+        
         <meta
           name="google-site-verification"
           content="eolCQ6AO02xOfbEXNzqJ5v9Te-gDOclWxUmXr1CX_QI"

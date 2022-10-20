@@ -9,8 +9,8 @@ import contactImg from "../public/assets/images/logo.png";
 
 function Contact() {
   return (
-    <div id="contact" className="w-full lg:h-screen">
-      <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
+    <div id="contact" className="w-full lg:h-screen p-2">
+      <div className="max-w-[1240px] m-auto px-2 py-16 w-full p-4">
         <p className=" py-4 max-w-[70%] uppercase text-md tracking-widest text-gray-600">
           <span className="text-[#73BA9B]">⎯⎯⎯⎯⎯</span> CONTACT
         </p>
