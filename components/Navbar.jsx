@@ -25,11 +25,11 @@ function Navbar() {
   useEffect(() => {
     if (router.asPath === "/sveasolar" || router.asPath === "/viovin") {
       setNavBg("transparent");
-      setLinkColor("#e9f0ed");
-    } else if (theme === "light") {
+      setLinkColor("#1d201f");
+    } else if (router.asPath === "/" || theme === "light") {
       setNavBg("#ecf0f3");
       setLinkColor("#73BA9B");
-    } else {
+    } else if (router.asPath === "/" || theme === "dark") {
       setNavBg("#121212");
       setLinkColor("#73BA9B");
     }
@@ -55,10 +55,12 @@ function Navbar() {
 
   return (
     <div
+   
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? " w-full h-20 shadow-xl z-[100] dark:shadow-black "
-          : " w-full h-20 z-[100]  "
+          ? " fixed w-full h-20 shadow-xl z-[100] mb-8 dark:bg-[#121212] dark:shadow-black "
+          : " fixed w-full h-20 z-[100] mb-8 bg-[#ecf0f3]  "
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 ">
@@ -124,7 +126,11 @@ function Navbar() {
 
           {/* HAMBURGER MENU */}
 
-          <div onClick={handleNav} className="md:hidden  text-[#73BA9B]">
+          <div
+            style={{ color: `${linkColor}` }}
+            onClick={handleNav}
+            className="md:hidden  text-[#73BA9B]"
+          >
             <AiOutlineMenu size={30} />
           </div>
         </div>
