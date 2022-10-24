@@ -1,7 +1,7 @@
 import React from "react";
 import logoImg from "../public/assets/images/logoWhite.png";
 import Image from "next/image";
-import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineInstagram } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
@@ -34,40 +34,42 @@ function Footer() {
         <div class="flex flex-wrap items-center justify-between">
           <Image class="h-8 auto md:order-1" src={logoImg} alt="" />
 
-          <ul class="flex items-center space-x-3 md:order-3">
-            <li>
-              <div className="rounded-full shadow-xl shadow-gray-400  dark:shadow-black p-4 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
-                <a href="www.linkedin.com/in/sandycongreve">
-                  <FaLinkedinIn size={24} />
-                </a>
-              </div>
-            </li>
+      
 
-            <li>
-              <div className="rounded-full shadow-xl shadow-gray-400   dark:shadow-black p-4 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
-                <a href="https://github.com/congreves">
-                  <FaGithub size={24} />
+          <div className="pt-4 flex items-end justify-end m-4 w-full sm:w[80%]">
+                <a
+                  href="www.linkedin.com/in/sandycongreve"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="rounded-full shadow-lg shadow-gray-400  text-[#73BA9B] dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <FaLinkedinIn size={25}/>
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/congreves"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="rounded-full shadow-lg shadow-gray-400 text-[#73BA9B] dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <FaGithub size={25}/>
+                  </div>
+                </a>
+                <a
+                  href="https://www.instagram.com/sandysonrisa/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="rounded-full shadow-lg shadow-gray-400 text-[#73BA9B] dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <AiOutlineInstagram size={25} />
+                  </div>
+                </a>
+                <a href="/" target="_blank" rel="noreferrer">
+                  <div className="rounded-full shadow-lg shadow-gray-400 text-[#73BA9B] dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <BsFillPersonLinesFill />
+                  </div>
                 </a>
               </div>
-            </li>
-
-            <li>
-              <div className="rounded-full shadow-xl shadow-gray-400   dark:shadow-black p-4 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
-                <a href="https://www.sandycongreve.com/">
-                  {" "}
-                  <AiOutlineMail size={24} />{" "}
-                </a>
-              </div>
-            </li>
-
-            <li>
-              <div className="flex-row rounded-full shadow-xl shadow-gray-400   dark:shadow-black  p-4 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
-                <a href="https://www.sandycongreve.com/">
-                  <BsFillPersonLinesFill size={24} />
-                </a>
-              </div>
-            </li>
-          </ul>
 
           <p class="w-full mt-8 text-sm text-center text-[#73BA9B] md:mt-0 md:w-auto md:order-2">
             © Copyright 2022, All Rights Reserved by Sandy Congreve

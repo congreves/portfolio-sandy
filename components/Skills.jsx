@@ -19,7 +19,7 @@ function Skills() {
         <p className=" py-4 max-w-[70%] uppercase text-md tracking-widest text-gray-600">
           <span className="text-[#73BA9B]">⎯⎯⎯⎯⎯</span> SKILLS
         </p>
-        <h2 className=" py-4">What I Can Do</h2>
+        <h2 className="py-4">What I Can Do</h2>
         <div className=" pt-4 grid md:grid-cols-6 lg:grid-cols-4 gap-8 justify-center items-center">
           <div className="p-6   dark:shadow-black shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">

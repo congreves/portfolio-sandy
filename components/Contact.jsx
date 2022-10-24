@@ -1,13 +1,14 @@
 import React from "react";
-import Image from "next/image";
+
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Link from "next/link";
-import contactImg from "../public/assets/images/logo.png";
+import { useRouter } from "next/router";
 
 function Contact() {
+  const router = useRouter();
   return (
     <div id="contact" className="w-full lg:h-screen p-2">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full p-4">
@@ -37,7 +38,16 @@ function Contact() {
                 <p className="py-4">Im available for internship spring 2023</p>
               </div>
               <div>
-                <button>Send me an email</button>
+                <button
+                  className="animate-pulse"
+                  type="button"
+                  onClick={() =>
+                    router.push("mailto:sandy.congreve@cmeducations.se")
+                  }
+                >
+                  {" "}
+                  Lets connect{" "}
+                </button>
                 <div className="flex items justify-between py-4">
                   <div className="rounded-full  dark:shadow-black shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
                     <FaLinkedinIn />
@@ -67,10 +77,10 @@ function Contact() {
             ></iframe>
           </div>
         </div>
-        <div className="flex justify-center py-12">
+        <div className="flex justify-center py-12 mt-8">
           <Link href="/">
-            <div className=" rounded-full bg-[#73BA9B] dark:shadow-black shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B] animate-bounce ...">
-              <HiOutlineChevronDoubleUp className="text-[#121413]" sixe={30} />
+            <div className=" rounded-full bg-[#73BA9B] dark:shadow-black shadow-lg shadow-gray-400 p-8 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B] animate-bounce ...">
+              <HiOutlineChevronDoubleUp className="text-[#121413]" sixe={40} />
             </div>
           </Link>
         </div>
@@ -80,58 +90,3 @@ function Contact() {
 }
 
 export default Contact;
-
-{
-  /* RIGHT*/
-}
-
-/* <div className="col-span-3 w-full h-auto  dark:shadow-black shadow-xl shadow-gray-400 rounded-xl lg:p-4">
-     <div className="p-4">
-       <form>
-         <div className="grid md:grid-cols-2 gap-4 w-full py-2">
-           <div className="flex flex-col">
-             <label className="uppercase text-sm py-2">Name</label>
-             <input
-               className="border rounded-lg p-3 flex border-gray-300"
-               type="text"
-             />
-           </div>
-
-           <div className="flex flex-col">
-             <label className="uppercase text-sm py-2">
-               Phone Number
-             </label>
-             <input
-               className="border-2 rounded-lg p-3 flex border-gray-300"
-               type="text"
-             />
-           </div>
-         </div>
-         <div className="flex flex-col py-2">
-           <label className="uppercase text-sm py-2">Email</label>
-           <input
-             className="border-2 rounded-lg p-3 flex border-gray-300"
-             type="email"
-           />
-         </div>
-         <div className="flex flex-col py-2">
-           <label className="uppercase text-sm py-2">Subject</label>
-           <input
-             className="border-2 rounded-lg p-3 flex border-gray-300"
-             type="email"
-           />
-         </div>
-         <div className="flex flex-col py-2">
-           <label className="uppercase text-sm py-2">Message</label>
-           <textarea
-             className="border-2 rounded-lg p-3  border-gray-300"
-             type="text"
-             rows="10"
-           ></textarea>
-         </div>
-         <button className="w-full p-4 text-gray-100 mt-4">
-           Send Message
-         </button>
-       </form>
-     </div>
-   </div>*/

@@ -32,10 +32,14 @@
     font-display: swap;
     font-style: normal;
   }
+  * {
+    @apply box-border p-0 m-0;
+  }
 
   body {
-    @apply font-satoshi bg-[#ecf0f3] dark:bg-[#121212] text-[#1f2937] tracking-wide;
+    @apply font-satoshi bg-[#ecf0f3] dark:bg-[#121212] text-[#1f2937];
   }
+
   h1,
   h2,
   h3,
@@ -60,12 +64,12 @@
     @apply cursor-pointer font-medium tracking-wider;
   }
   button {
-    @apply shadow-xl shadow-gray-400 font-medium dark:shadow-black  tracking-widest rounded-full uppercase py-2 px-6 bg-[#73BA9B] text-white dark:bg-[#73BA9B];
+    @apply shadow-xl shadow-gray-400 font-medium dark:shadow-black  tracking-widest rounded-full uppercase py-2 px-4 bg-[#73BA9B] text-white dark:bg-[#73BA9B];
   }
   label {
     @apply text-[#73BA9B] font-bold;
   }
   small {
-    @apply shadow-xl border-[#73BA9B] shadow-gray-400 font-medium dark:shadow-black  rounded-full m-1 pl-1.5 pr-1.5 bg-inherit text-white ;
+    @apply font-medium dark:shadow-black  m-1 pl-1.5 pr-1.5  dark:text-white text-[#2e3733];
   }
 }

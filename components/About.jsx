@@ -1,14 +1,13 @@
 import React from "react";
-import Image from "next/image";
 
 import Link from "next/link";
 
 function About() {
   return (
-    <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
+    <div id="about" className="w-full md:h-screen p-2 flex items-center ">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-4 gap-8">
         <div className="col-span-4 p-4">
-          <p className=" py-4 max-w-[60%] uppercase text-md tracking-widest text-gray-600">
+          <p className="uppercase text-sm tracking-widest text-gray-600">
             <span className="text-[#73BA9B]">⎯⎯⎯⎯⎯</span> ABOUT
           </p>
           <h2 className="py-4">Who I Am</h2>
@@ -62,11 +61,7 @@ function About() {
             about utility-first driven CSS and consistency in development.
           </p>
 
-          <Link href="/#projects">
-            <button className="py-2 cursor-pointer mt-10 hover:scale-105 ease-in duration-300 ">
-              Check out some of my latest projects.
-            </button>
-          </Link>
+        
         </div>
         <div className="col-span-2 p-4 ">
           <h3>Goals & Needs</h3>
@@ -86,7 +81,13 @@ function About() {
             I'm not perfect and probably never will be, but I'll do my best to
             always try and give my all.{" "}
           </p>
+          <Link href="/#projects">
+            <button className="py-2 cursor-pointer mt-10 hover:scale-105 ease-in duration-300 ">
+              Check out some of my latest projects.
+            </button>
+          </Link>
         </div>
+      
       </div>
     </div>
   );

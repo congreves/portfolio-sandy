@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import wineImg from "../public/assets/projects/viovin.png";
+import wineImg from "../public/assets/projects/5.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import { HiArrowLeft } from "react-icons/hi";
@@ -18,18 +18,25 @@ function viovin() {
           src={wineImg}
           alt="/"
         />
-        <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">VioVin - Website</h2>
-          <h3>Figma / React / Styled Components / React-Router-Dom</h3>
+        <div className="flex flex-col items-start justify-start absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
+          <Link href="/#projects">
+            <div className="rounded-full my-5 dark:shadow-black shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#73BA9B] text-white dark:text-[#121212]">
+              <HiArrowLeft size={25} />
+            </div>
+          </Link>
+          <div className="flex flex-col justify-center mb-10 ">
+            <h2 className="py-2">VioVin - Website</h2>
+            <h3>Figma / React / Styled Components / React-Router-Dom</h3>
+          </div>
         </div>
       </div>
 
       {/* Project content */}
-      <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
+      <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8 mt-10">
         <div className="col-span-4">
           <p className="pb-2">Project</p>
-          <h2 className="pb-4">Overview</h2>
-          <p className="pb-4">
+          <h3 className="pb-4">Overview</h3>
+          <p className="w-[100%]">
             - Created a website for a start-up that wanted to market their
             business for online presence.
             <br></br>- I was responsible for designing, developing and
@@ -41,7 +48,7 @@ function viovin() {
             but not purchase.
             <br></br>- The site is responsive.
           </p>
-          <div className="flex ">
+          <div className="flex mt-4 ">
             <a href="https://www.viovin.se/">
               <button className="px-8 py-2 cursor-pointer hover:scale-110 ease-in duration-300 m-4">
                 Demo
@@ -73,10 +80,10 @@ function viovin() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center py-12">
+        <div className=" lg:hidden flex justify-center py-6">
           <Link href="/#projects">
-            <div className="rounded-full  dark:shadow-black shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
-              <HiArrowLeft className="text-[#73BA9B]" sixe={30} />
+            <div className="rounded-full my-5 dark:shadow-black shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#73BA9B] text-white dark:text-[#121212]">
+              <HiArrowLeft size={25} />
             </div>
           </Link>
         </div>

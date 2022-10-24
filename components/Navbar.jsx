@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
+import {
+  AiOutlineClose,
+  AiOutlineMenu,
+  AiOutlineInstagram,
+} from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
@@ -53,11 +57,11 @@ function Navbar() {
     <div
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100] dark:shadow-black "
-          : "fixed w-full h-20 z-[100]  "
+          ? " w-full h-20 shadow-xl z-[100] dark:shadow-black "
+          : " w-full h-20 z-[100]  "
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16  ">
+      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 ">
         <Link href="/">
           <a>
             <Image
@@ -69,12 +73,13 @@ function Navbar() {
             />
           </a>
         </Link>
+
         <div>
           <ul
             style={{ color: `${linkColor}` }}
             className="hidden md:flex items-center"
           >
-            <li className="ml-10  uppercase hover:border-b">
+            <li className="ml-10 uppercase hover:border-b">
               <Link href="/">Home</Link>
             </li>
 
@@ -82,18 +87,18 @@ function Navbar() {
               <Link href="/#about">About</Link>
             </li>
 
-            <li className="ml-10  uppercase hover:border-b">
+            <li className="ml-10  uppercase hover:border-b smooth-scroll">
               <Link href="/#skills"> Skills</Link>
             </li>
 
-            <li className="ml-10 uppercase hover:border-b">
+            <li className="ml-10 uppercase hover:border-b smooth-scroll">
               <Link href="/#projects">Projects </Link>
             </li>
 
-            <li className="ml-10 uppercase hover:border-b">
+            <li className="ml-10 uppercase hover:border-b smooth-scroll">
               <Link href="/#contact">Contact</Link>
             </li>
-            <li className="ml-10 uppercase hover:border-b">
+            <li className="ml-5 uppercase hover:border-b smooth-scroll">
               <button
                 onClick={() => setTheme(theme === "light" ? "dark" : "light")}
                 className="rounded-full p-2 bg-[#73BA9B] animate-pulse"
@@ -109,21 +114,21 @@ function Navbar() {
 
           {/* HAMBURGER MENU */}
 
-          <div onClick={handleNav} className="md:hidden text-[#73BA9B]">
-            <AiOutlineMenu size={25} />
+          <div onClick={handleNav} className="md:hidden  text-[#73BA9B]">
+            <AiOutlineMenu size={30} />
           </div>
         </div>
       </div>
       <div
         className={
-          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+          nav ? "md:hidden z-[100] fixed left-0 top-0 w-full h-screen bg-black/70" : ""
         }
       >
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] dark:bg-[#121212] p-10 ease-in duration-500"
-              : "fixed left-[-120%] top-0 p-10 ease-in duration-500"
+              ? " fixed   left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] dark:bg-[#121212] p-10 ease-in duration-500"
+              : "fixed  left-[-120%] top-0 p-10 ease-in duration-500"
           }
         >
           <div>
@@ -133,7 +138,7 @@ function Navbar() {
               </Link>
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg text-[#73BA9B]  dark:shadow-black shadow-gray-400 p-3 cursor-pointer"
+                className="rounded-full shadow-lg bg-[#73BA9B]   text-white dark:text-[#121212] dark:shadow-black shadow-gray-400 p-3 cursor-pointer"
               >
                 <AiOutlineClose />
               </div>
@@ -176,12 +181,32 @@ function Navbar() {
               >
                 <Link href="/#contact">Contact </Link>
               </li>
+              <li className="py-4 text-sm hover:border-b text-[#73BA9B]">
+                <button
+                  onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+                  className="rounded-full p-2 bg-[#73BA9B] animate-pulse"
+                >
+                  {theme === "light" ? (
+                    <MoonIcon className="text-white w-5 h-5" />
+                  ) : (
+                    <SunIcon className="text-white w-5 h-5" />
+                  )}{" "}
+                </button>
+              </li>
             </ul>
-            <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#73BA9B]">
-                Lets connect
-              </p>
-              <div className="flex items-center justify-between my-4 w-full sm:w[80%]">
+            <div className="pt-8">
+              <button
+              className="animate-pulse"
+                type="button"
+                onClick={() =>
+                  router.push("mailto:sandy.congreve@cmeducations.se")
+                }
+              >
+                {" "}
+                Lets connect{" "}
+              </button>
+
+              <div className="pt-4 flex items-center justify-between my-4 w-full sm:w[80%]">
                 <a
                   href="www.linkedin.com/in/sandycongreve"
                   target="_blank"
@@ -200,9 +225,13 @@ function Navbar() {
                     <FaGithub />
                   </div>
                 </a>
-                <a href="/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.instagram.com/sandysonrisa/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <div className="rounded-full shadow-lg shadow-gray-400 text-[#73BA9B] dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <AiOutlineMail />
+                    <AiOutlineInstagram />
                   </div>
                 </a>
                 <a href="/" target="_blank" rel="noreferrer">
