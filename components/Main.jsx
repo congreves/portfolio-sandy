@@ -11,8 +11,8 @@ function Main() {
   const router = useRouter();
   return (
     <div id="home" className="w-full md:h-screen p-2 flex items-center  ">
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-2 gap-8 lg:grid lg:items-center lg:justify-center">
-        <div className="grid-cols-1 p-4">
+      <div className="max-w-[1240px] m-auto md:grid grid-cols-4 gap-8 ">
+        <div className="col-span-2 p-4">
           <div>
             <p className=" uppercase text-sm tracking-widest text-gray-600">
               <span className="text-[#73BA9B]">⎯⎯⎯⎯⎯</span> CREATIVE DEVELOPER
@@ -62,7 +62,7 @@ function Main() {
               </a>
               <button
                 className="mt-6 hover:scale-105 ease-in duration-300 animate-pulse"
-                type="button"
+               
                 onClick={() =>
                   router.push("mailto:sandy.congreve@cmeducations.se")
                 }
@@ -73,19 +73,19 @@ function Main() {
             </section>
           </div>
         </div>
-        <div className=" grid p-4 hover:scale-105 ease-in duration-300 max-w-[50%]  lg:max-w-md items-center justify-self-center align">
+        <div className=" col-span-2 p-4 hover:scale-105 ease-in duration-300 max-w-[50%]  lg:max-w-md items-end justify-self-end align">
           <Image
             className="rounded-xl h-auto m-auto  dark:shadow-black shadow-xl shadow-gray-400  "
             src={profileImg}
             alt="/"
           />
         </div>
-        <div className="hidden lg:flex flex justify-center py-12 mt-8">
-          <Link href="/">
+        <div className="hidden lg:grid lg:col-span-4 justify-self-center items-center justify-center py-12 mt-8">
+          <Link href="/#about">
             <div className=" rounded-full bg-[#73BA9B] dark:shadow-black shadow-lg shadow-gray-400 p-8 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B] animate-bounce ...">
               <HiOutlineChevronDoubleDown
                 className="text-[#121413]"
-                sixe={40}
+                size={40}
               />
             </div>
           </Link>

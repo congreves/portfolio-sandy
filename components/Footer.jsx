@@ -34,42 +34,40 @@ function Footer() {
         <div class="flex flex-wrap items-center justify-between">
           <Image class="h-8 auto md:order-1" src={logoImg} alt="" />
 
-      
-
           <div className="pt-4 flex items-end justify-end m-4 w-full sm:w[80%]">
-                <a
-                  href="www.linkedin.com/in/sandycongreve"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div className="rounded-full shadow-lg shadow-gray-400  text-[#73BA9B] dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaLinkedinIn size={25}/>
-                  </div>
-                </a>
-                <a
-                  href="https://github.com/congreves"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div className="rounded-full shadow-lg shadow-gray-400 text-[#73BA9B] dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaGithub size={25}/>
-                  </div>
-                </a>
-                <a
-                  href="https://www.instagram.com/sandysonrisa/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div className="rounded-full shadow-lg shadow-gray-400 text-[#73BA9B] dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <AiOutlineInstagram size={25} />
-                  </div>
-                </a>
-                <a href="/" target="_blank" rel="noreferrer">
-                  <div className="rounded-full shadow-lg shadow-gray-400 text-[#73BA9B] dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <BsFillPersonLinesFill />
-                  </div>
-                </a>
+            <a
+              href="https://linkedin.com/in/sandycongreve"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="rounded-full shadow-lg shadow-gray-400  text-[#73BA9B] dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <FaLinkedinIn size={25} />
               </div>
+            </a>
+            <a
+              href="https://github.com/congreves"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="rounded-full shadow-lg shadow-gray-400 text-[#73BA9B] dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <FaGithub size={25} />
+              </div>
+            </a>
+            <a
+              href="https://www.instagram.com/sandysonrisa/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="rounded-full shadow-lg shadow-gray-400 text-[#73BA9B] dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <AiOutlineInstagram size={25} />
+              </div>
+            </a>
+            <a href="/" target="_blank" rel="noreferrer">
+              <div className="rounded-full shadow-lg shadow-gray-400 text-[#73BA9B] dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <BsFillPersonLinesFill />
+              </div>
+            </a>
+          </div>
 
           <p class="w-full mt-8 text-sm text-center text-[#73BA9B] md:mt-0 md:w-auto md:order-2">
             © Copyright 2022, All Rights Reserved by Sandy Congreve

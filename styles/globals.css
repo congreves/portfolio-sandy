@@ -64,7 +64,7 @@
     @apply cursor-pointer font-medium tracking-wider;
   }
   button {
-    @apply shadow-xl shadow-gray-400 font-medium dark:shadow-black  tracking-widest rounded-full uppercase py-2 px-4 bg-[#73BA9B] text-white dark:bg-[#73BA9B];
+    @apply bg-[#73BA9B] text-white shadow-xl shadow-gray-400 font-medium dark:shadow-black  tracking-widest rounded-full uppercase py-2 px-4;
   }
   label {
     @apply text-[#73BA9B] font-bold;

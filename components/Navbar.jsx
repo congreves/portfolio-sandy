@@ -73,6 +73,16 @@ function Navbar() {
             />
           </a>
         </Link>
+        <button
+          onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+          className="lg:hidden md:hidden rounded-full p-2 bg-[#73BA9B] animate-pulse"
+        >
+          {theme === "light" ? (
+            <MoonIcon className="text-white w-5 h-5" />
+          ) : (
+            <SunIcon className="text-white w-5 h-5" />
+          )}{" "}
+        </button>
 
         <div>
           <ul
@@ -121,7 +131,9 @@ function Navbar() {
       </div>
       <div
         className={
-          nav ? "md:hidden z-[100] fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+          nav
+            ? "md:hidden z-[100] fixed left-0 top-0 w-full h-screen bg-black/70"
+            : ""
         }
       >
         <div
@@ -196,8 +208,7 @@ function Navbar() {
             </ul>
             <div className="pt-8">
               <button
-              className="animate-pulse"
-                type="button"
+                className="animate-pulse"
                 onClick={() =>
                   router.push("mailto:sandy.congreve@cmeducations.se")
                 }

@@ -40,7 +40,7 @@ function Contact() {
               <div>
                 <button
                   className="animate-pulse"
-                  type="button"
+                 
                   onClick={() =>
                     router.push("mailto:sandy.congreve@cmeducations.se")
                   }
