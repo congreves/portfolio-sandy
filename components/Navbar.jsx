@@ -127,7 +127,7 @@ function Navbar() {
           <div
             style={{ color: `${linkColor}` }}
             onClick={handleNav}
-            className="md:hidden  text-[#73BA9B] pr-2"
+            className="md:hidden  text-[#73BA9B] p-2"
           >
             <AiOutlineMenu size={35} />
           </div>

@@ -10,7 +10,10 @@ import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 function Main() {
   const router = useRouter();
   return (
-    <div id="home" className="w-full h-[100vh] md:h-screen p-2 flex items-center pt-10 ">
+    <div
+      id="home"
+      className="w-full h-[100vh] md:h-screen p-2 flex items-center m-2 pt-10 "
+    >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-4 gap-8 ">
         <div className="col-span-2 p-4">
           <div>
@@ -62,7 +65,6 @@ function Main() {
               </a>
               <button
                 className="mt-6 hover:scale-105 ease-in duration-300 animate-pulse"
-               
                 onClick={() =>
                   router.push("mailto:sandy.congreve@cmeducations.se")
                 }
@@ -75,7 +77,7 @@ function Main() {
         </div>
         <div className=" col-span-2 p-4 hover:scale-105 ease-in duration-300 max-w-[50%]  lg:max-w-md items-end justify-self-end align">
           <Image
-            className="rounded-xl h-auto m-auto  dark:shadow-black shadow-xl shadow-gray-400  "
+            className="rounded-xl h-auto m-auto  dark:shadow-black  "
             src={profileImg}
             alt="/"
           />

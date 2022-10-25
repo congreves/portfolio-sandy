@@ -85,7 +85,7 @@ function Contact() {
               </div>
             </div>
           </div>
-          <div className="col-span-3 w-full h-auto  dark:shadow-black shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+          <div className="col-span-3 w-full h-full  dark:shadow-black shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <iframe
               src="https://www.slideshare.net/slideshow/embed_code/key/2G0w5L1Qf1NxxK?hostedIn=slideshare&page=upload"
               width="100%"
