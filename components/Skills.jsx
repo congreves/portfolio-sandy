@@ -14,15 +14,15 @@ import htmlImg from "../public/assets/skills/html.png";
 
 function Skills() {
   return (
-    <div id="skills" className="w-full lg:h-screen p-2">
-      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full p-4">
+    <div id="skills" className="w-full lg:h-[75vh]  p-2">
+      <div className="max-w-[1240px] mx-auto flex flex-col  align-top h-full p-4">
         <p className=" py-4 max-w-[70%] uppercase text-md tracking-widest text-gray-600">
           <span className="text-[#73BA9B]">⎯⎯⎯⎯⎯</span> SKILLS
         </p>
         <h2 className="py-4">What I Can Do</h2>
-        <div className=" pt-4 grid md:grid-cols-6 lg:grid-cols-4 gap-8 justify-center items-center">
-          <div className="p-6   dark:shadow-black shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+        <div className=" pt-4 grid sm:grid-cols-6 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center items-center">
+          <div className="p-6  dark:shadow-black shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid sm:col-span-2  grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={htmlImg} width="64px" height="64px" alt="/" />
               </div>

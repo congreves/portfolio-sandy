@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="./favicon.ico" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
-      <Navbar/>
+      <Navbar />
       <Main />
       <About />
       <Skills />

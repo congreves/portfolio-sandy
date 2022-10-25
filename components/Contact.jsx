@@ -1,6 +1,6 @@
 import React from "react";
 
-import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineInstagram } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
@@ -40,7 +40,6 @@ function Contact() {
               <div>
                 <button
                   className="animate-pulse"
-                 
                   onClick={() =>
                     router.push("mailto:sandy.congreve@cmeducations.se")
                   }
@@ -48,19 +47,40 @@ function Contact() {
                   {" "}
                   Lets connect{" "}
                 </button>
-                <div className="flex items justify-between py-4">
-                  <div className="rounded-full  dark:shadow-black shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
-                    <FaLinkedinIn />
-                  </div>
-                  <div className="rounded-full   dark:shadow-black shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
-                    <FaGithub />
-                  </div>
-                  <div className="rounded-full  dark:shadow-black shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
-                    <AiOutlineMail />
-                  </div>
-                  <div className="rounded-full  dark:shadow-black shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-[#73BA9B]">
-                    <BsFillPersonLinesFill />
-                  </div>
+            
+                <div className="mt-8 flex items justify-between py-4">
+                  <a
+                    href="https://linkedin.com/in/sandycongreve"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400  text-[#73BA9B] dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                      <FaLinkedinIn size={25} />
+                    </div>
+                  </a>
+                  <a
+                    href="https://github.com/congreves"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 text-[#73BA9B] dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                      <FaGithub size={25} />
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/sandysonrisa/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 text-[#73BA9B] dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                      <AiOutlineInstagram size={25} />
+                    </div>
+                  </a>
+                  <a href="/" target="_blank" rel="noreferrer">
+                    <div className="rounded-full shadow-lg shadow-gray-400 text-[#73BA9B] dark:shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                      <BsFillPersonLinesFill />
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>

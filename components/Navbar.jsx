@@ -25,11 +25,11 @@ function Navbar() {
   useEffect(() => {
     if (router.asPath === "/sveasolar" || router.asPath === "/viovin") {
       setNavBg("transparent");
-      setLinkColor("#1d201f");
-    } else if (router.asPath === "/" || theme === "light") {
+      setLinkColor("#73BA9B");
+    } else if (router.asPath === "/" && theme === "light") {
       setNavBg("#ecf0f3");
       setLinkColor("#73BA9B");
-    } else if (router.asPath === "/" || theme === "dark") {
+    } else if (router.asPath === "/" && theme === "dark") {
       setNavBg("#121212");
       setLinkColor("#73BA9B");
     }
@@ -55,13 +55,11 @@ function Navbar() {
 
   return (
     <div
-   
-      style={{ backgroundColor: `${navBg}` }}
-      className={
+      className={`${"bg-[#ecf0f3] dark:bg-[#121212]"} ${
         shadow
           ? " fixed w-full h-20 shadow-xl z-[100] mb-8 dark:bg-[#121212] dark:shadow-black "
           : " fixed w-full h-20 z-[100] mb-8 bg-[#ecf0f3]  "
-      }
+      }`}
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 ">
         <Link href="/">
@@ -76,7 +74,7 @@ function Navbar() {
           </a>
         </Link>
         <button
-          onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           className="lg:hidden md:hidden rounded-full p-2 bg-[#73BA9B] animate-pulse"
         >
           {theme === "light" ? (
@@ -129,9 +127,9 @@ function Navbar() {
           <div
             style={{ color: `${linkColor}` }}
             onClick={handleNav}
-            className="md:hidden  text-[#73BA9B]"
+            className="md:hidden  text-[#73BA9B] pr-2"
           >
-            <AiOutlineMenu size={30} />
+            <AiOutlineMenu size={35} />
           </div>
         </div>
       </div>

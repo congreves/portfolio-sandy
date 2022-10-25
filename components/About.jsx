@@ -4,10 +4,10 @@ import Link from "next/link";
 
 function About() {
   return (
-    <div id="about" className="w-full md:h-screen p-2 flex items-center ">
+    <div id="about" className="w-full md:h-screen p-2 flex items-top ">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-4 gap-8">
         <div className="justify-self-start col-span-4 p-4">
-          <p className="uppercase text-sm tracking-widest text-gray-600">
+          <p className="uppercase text-md tracking-widest text-gray-600">
             <span className="text-[#73BA9B]">⎯⎯⎯⎯⎯</span> ABOUT
           </p>
           <h2 className="py-4">Who I Am</h2>

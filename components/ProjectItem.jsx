@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function ProjectItem(props) {
   return (
-    <div className=" relative mt-8  p-4 shadow-xl shadow-gray-400  dark:shadow-black rounded-xl group hover:backdrop-filter hover:backdrop-blur-xl hover: border-gray-200 hover:bg-opacity-60 dark:border-none cursor-pointer hover:scale-105 ease-in-out duration-300">
+    <div className=" relative  p-4 shadow-xl shadow-gray-400  dark:shadow-black rounded-xl group hover:backdrop-filter hover:backdrop-blur-xl hover: border-gray-200 hover:bg-opacity-60 dark:border-none cursor-pointer hover:scale-105 ease-in-out duration-300">
       <section className="flex flex-col">
         <Image
           className="rounded-xl group-hover:opacity-10 p-4 w-[100%]"

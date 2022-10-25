@@ -10,7 +10,7 @@ import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 function Main() {
   const router = useRouter();
   return (
-    <div id="home" className="w-full md:h-screen p-2 flex items-center  ">
+    <div id="home" className="w-full h-[100vh] md:h-screen p-2 flex items-center pt-10 ">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-4 gap-8 ">
         <div className="col-span-2 p-4">
           <div>
