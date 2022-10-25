@@ -12,7 +12,7 @@ function Main() {
   return (
     <div
       id="home"
-      className="w-full h-[100vh] md:h-screen p-2 flex items-center m-2 pt-10 "
+      className="w-full h-[100vh] md:h-screen p-2 flex items-center  pt-10 "
     >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-4 gap-8 ">
         <div className="col-span-2 p-4">
